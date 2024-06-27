@@ -230,3 +230,38 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+.keyboard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.line {
+  display: flex;
+  gap: 4px;
+}
+
+.letter {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #e6e6e6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.letter.incorrect {
+  color: #fff;
+  background: #404040;
+}
+.letter.correct {
+  color: #fff;
+  background: #15824d;
+}
+.letter.misplaced {
+  background: #998001;
+  color: #fff;
+}
